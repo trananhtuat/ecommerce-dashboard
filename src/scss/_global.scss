@@ -1,0 +1,36 @@
+@use './abstracts/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $fontFamily;
+    color: $txtColor;
+    font-size: $fontSizeNormal;
+    line-height: 1.5;
+    background-color: $bodyBg;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    width: 100%;
+}
+
+ul,
+li {
+    list-style-type: none;
+}

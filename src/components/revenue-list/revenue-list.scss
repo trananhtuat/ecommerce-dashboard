@@ -1,0 +1,20 @@
+@use '../../scss/abstracts/' as *;
+@use 'sass:math';
+
+.revenue-list {
+    & > * ~ * {
+        margin-top: math.div($spacing, 2);
+    }
+
+    &__item {
+        &__title {
+            @include flex(center, space-between);
+            font-size: $fontSizeMedium;
+            margin-bottom: math.div($spacing, 6);
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

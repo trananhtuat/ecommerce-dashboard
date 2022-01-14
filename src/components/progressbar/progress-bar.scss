@@ -1,0 +1,13 @@
+@use '../../scss/abstracts/' as *;
+
+.progress-bar {
+    height: 10px;
+    background-color: $bodyBg;
+    border-radius: 2.5px;
+
+    &__inner {
+        border-radius: 2.5px;
+        height: 100%;
+        background-color: $orange;
+    }
+}
